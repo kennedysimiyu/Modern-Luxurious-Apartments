@@ -15,7 +15,7 @@ class house extends Component {
                 </div>
                 <div className="row">
                 <div className="col-md-7">
-                    <img src={``} alt="House"/>
+                    <img src={`../img/house-1.png`} alt="House"/>
                 </div>
                 <div className="col-md-5">
                     <p className="price">${house.price}</p>
