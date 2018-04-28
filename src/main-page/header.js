@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './CossyHouseLogo.png';
+import logo from './logo.png';
 
 /* arrow function returning our header component */
 const Header = (props) => (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './main-page.css';
 import Header from './header'
 
@@ -8,9 +8,10 @@ class App extends Component {
   /* function to fetch our houses data */
   fetchHouses = () => {
     fetch('/houses.json')
-    .then(rsp = rsp.json())
+    .then(rsp => rsp.json())
     .then(allHouses => {
       this.allHouses = allHouses;
+      this.determineFeaturedHouse();
     })
   }
 
@@ -26,7 +27,7 @@ class App extends Component {
     return (
       /* render the imported header component  */
       <div className="container">
-        <Header subtitle="Classy Cossy Houses"/>
+        <Header subtitle="Modern Luxurious Apartments"/>
       </div>
     );
   }
