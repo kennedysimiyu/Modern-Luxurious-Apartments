@@ -4,6 +4,13 @@ import './main-page.css';
 import Header from './header'
 
 class App extends Component {
+  /* initialize component state */
+  state = {}
+
+ /* component life cycle location to fetch data */
+ componentDidMount() {
+   this.fetchHouses();
+ }
 
   /* function to fetch our houses data */
   fetchHouses = () => {
