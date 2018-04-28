@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.png';
 import './main-page.css';
-import Header from './header'
+import Header from './header';
+import FeaturedHouse from './featured-house'
 
 class App extends Component {
   /* initialize component state */
@@ -35,6 +36,7 @@ class App extends Component {
       /* render the imported header component  */
       <div className="container">
         <Header subtitle="Modern Luxurious Apartments"/>
+        <FeaturedHouse house={this.state.featuredHouse}/>
       </div>
     );
   }
