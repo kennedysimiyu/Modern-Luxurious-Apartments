@@ -46,7 +46,7 @@ class App extends Component {
       /* render the imported header component  */
       <div className="container">
         <Header subtitle="Modern Luxurious Apartments"/>
-        <HouseFilter countries={this.state.countries}/>
+        <HouseFilter countries={this.state.countries} filterHouses={this.filterHouses}/>
         <FeaturedHouse house={this.state.featuredHouse}/>
       </div>
     );
