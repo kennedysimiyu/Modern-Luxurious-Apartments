@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./house.css";
+import house1 from '../img/house-1.png'; 
 
 class house extends Component {
     state = {}
@@ -15,7 +16,7 @@ class house extends Component {
                 </div>
                 <div className="row">
                 <div className="col-md-7">
-                    <img src={`../img/house-1.png`} alt="House"/>
+                    <img className="house1" src={house1} alt="House"/>
                 </div>
                 <div className="col-md-5">
                     <p className="price">${house.price}</p>
