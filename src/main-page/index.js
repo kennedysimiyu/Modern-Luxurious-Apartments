@@ -41,6 +41,21 @@ class App extends Component {
     countries.unshift(null);
     this.setState({ countries })
   }
+  /* filter houses on drop down functionality */
+  filterHouses = (country) => {
+    this.setState({ activeHouse: null });
+    const filteredHouses = this.allHouses.filter((h) => h.country)
+    this.setState({ filteredHouses });
+    this.setState({ country });
+  }
+
+
+  /* set active house implementation */
+  setActiveHouse = (house) => {
+    this.setState({ activeHouse: house });
+
+  }
+
   render() {
     return (
       /* render the imported header component  */
